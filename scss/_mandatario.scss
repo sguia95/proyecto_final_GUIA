@@ -1,0 +1,49 @@
+.mandatario__titulo{background-color: white;
+margin-right: 100px;
+margin-left: 100px;
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: 50px;
+text-align: center;}
+
+.mandatario__grid{
+             margin-top: 0px;
+             margin-left: 100px;
+             margin-right: 100px;
+             margin-bottom: 0px;
+             display: grid;
+            grid-template-areas: 
+             "moderno papelerio clasico";
+            
+             grid-template-columns: 1fr 1fr 1fr;
+             height: 1000px
+             }
+
+  .mandatario__img{background-image: url(img/moderno.jfif);
+              background-size: cover;
+              height: 1000px;}
+
+ .mandatario__img--moderno{background-position: center-left;
+              grid-area: moderno;
+}
+
+ .mandatario__img--papelerio{background-image: url(img/papelerio.jpg);
+ background-position: center;
+              grid-area: papelerio;}
+
+ .mandatario__img--clasico{background-image: url(img/clasico.jpg);
+              background-position: 20px top, 30px left;
+              grid-area: clasico;}
+
+.mandatario__layer{background-color: orange;
+              position: relative;
+              bottom: 600px;
+              opacity: 0.85;              
+              height: auto;
+             margin-left:100px;
+             margin-right:100px;
+             margin-bottom: 0px;
+             margin-top: 0px;
+             font-family: 'Raleway', sans-serif; 
+             font-weight: bold;
+    font-size: 25px; }

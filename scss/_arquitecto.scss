@@ -1,0 +1,62 @@
+.arquitecto__titulo{background-color: white;
+margin-right: 100px;
+margin-left: 100px;
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: 50px;
+text-align: center;}
+
+.arquitecto__grid{border: double;
+    list-style-type: none;
+            margin-top: 0px;
+             margin-left: 100px;
+             margin-right: 100px;
+             margin-bottom: 0px;
+           display: grid;
+            grid-template-areas: 
+             "habilitaciones edificio"
+             "fachada edificio";
+            
+             grid-template-rows: 500px, 500px;
+             grid-template-columns: 250px, 250px;
+           
+             }
+
+
+             .arquitecto__habilitaciones{background-image: url(img/shopin.jpg);
+              height: 100%;
+              grid-area: habilitaciones;}
+
+
+                .arquitecto__layer{background-color: orange;ition: relative;
+              opacity: 0.85;
+              position: relative;
+             font-family: 'Raleway', sans-serif; 
+             font-weight: bold;
+    font-size: 25px;
+   margin-bottom: 200px;
+   margin-top: 200px;
+   padding-bottom: 20px;
+  height: auto;}
+
+  
+
+     .arquitecto__layer--obras{background-color: orange;
+              position: relative;
+              top: 400px;
+              opacity: 0.85;
+             font-family: 'Raleway', sans-serif; 
+             font-weight: bold;
+  height: auto;}
+
+.arquitecto__layer--subservicio{font-family: 'Oswald', sans-serif;
+font-size: 35px}
+
+.arquitecto__fachada{background-image: url(img/fachada.jpg);
+              grid-area: fachada;
+              background-size: cover;}
+
+.arquitecto__edificio{background-image: url(img/edificio.jpg);
+                background-size: cover;
+                grid-area: edificio;}
+

@@ -1,0 +1,22 @@
+.servicios{background-image: url(https://image.freepik.com/foto-gratis/texturas-pared-gris-fondo_74190-4389.jpg);
+  display: flex;
+  flex-direction:column;
+  height: 400px;
+  width: 100%;
+             text-align: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             list-style-type:none;
+             margin-top: 0px;
+             margin-bottom: 0px;   }
+
+  .servicios__titulo{
+    font-family: 'Oswald', sans-serif;
+  font-size: 50px;}
+  
+  .servicios__carousel{ position: relative;
+margin-top: 0px;
+margin-bottom:0px;}
+
+.servicios__subtitulos{font-family: 'Oswald', sans-serif;
+font-size: 30px}

@@ -1,0 +1,68 @@
+$rosaheader: rgb(255, 242, 221);
+$naranja:#EEAC42;
+
+@import "header";
+@import "quienesomos";
+@import "servicios";
+@import "footer";
+@import "arquitecto";
+@import "abogado";
+@import "mandatario";
+@import "contacto";
+
+-------------
+
+body{text-align: center;
+     background-image: url(https://images.pexels.com/photos/2680270/pexels-photo-2680270.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+             background-size: cover;
+             background-repeat: no-repeat;
+             color: black;
+             font-family: 'Montserrat', sans-serif;
+             font-size: 20px;
+         }
+
+a{color: orange;}
+
+header{  text-align: center;
+       background-color: $rosaheader; 
+
+       h1{ font-size: 50px;}
+
+       h2 {font-size: 30px;
+       margin-top: 0px;
+       padding-top: 0px;}
+
+       p{ font-size: 25px; }
+	   ul {text-align: center;
+	list-style: none;
+	       li{background-image: url(https://i2.wp.com/files.123freevectors.com/wp-content/original/112161-orange-and-yellow-blurred-background-vector.jpg?w=800&q=95);
+             display:inline-block; ;
+             border: solid;
+             width: 25%;
+             position:relative;
+             font-size: 14px}
+           ul{ position: absolute;
+               display: none;
+               li {border: solid;
+               text-align: center;
+               display: block;
+               width: 320px;} }
+            li:hover {ul { display:block; 
+                         padding-left: 0px; }
+                       }}}
+
+ ul{list-style: none;}                      
+
+ 
+ h2{display: inline;
+  text-align: center;
+    font-family: Times New Roman;
+     font-size: 20px; } 
+
+footer{text-align: center;
+      background-image:  linear-gradient(90deg, rgba(253,107,29,1) 0%, rgba(255,199,121,1) 100%);
+        margin-top: 0px;
+             margin-bottom: 0px;
+       font-size: 20px;}
+
+.fondo{     background-image: url(https://images.pexels.com/photos/2680270/pexels-photo-2680270.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);}

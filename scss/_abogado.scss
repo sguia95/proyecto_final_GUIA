@@ -1,0 +1,75 @@
+.abogado__titulo{background-color: white;
+margin-right: 100px;
+margin-left: 100px;
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: 50px;
+text-align: center;}
+
+.abogado__grid{ border: double;
+    list-style-type: none;
+            margin-top: 0px;
+             margin-left: 100px;
+             margin-right: 100px;
+             margin-bottom: 0px;
+            display: grid;
+            grid-template-areas: 
+             "laboral discapacidad"
+             "civilYComercial civilYComercial"
+             "naranja naranja";
+            
+             grid-template-rows: 500px, 500px, 200px;
+             grid-template-columns: 250px, 250px;}
+
+ .abogado__laboral{ grid-area:laboral; 
+              background-image: url(img/trabajador.jpg);
+             background-size: cover;
+             background-position:center;
+             padding-top: 0px;
+              margin-top: 0px;
+              }
+
+     .abogado__layer{background-color: orange;
+              position: relative;
+              opacity: 0.85;
+             font-family: 'Raleway', sans-serif; 
+             font-weight: bold;
+   margin-bottom: 200px;
+   margin-top: 200px;
+   padding-bottom: 20px;
+  height: auto;}
+
+  .abogado__discapacidad{grid-area: discapacidad;
+                background-image: url(img/discapacidad.jpg);
+                background-size: cover;
+                background-position: center;                
+                display: flex;
+             background-size: cover;
+              }
+
+            .abogado__layer--subservicio{font-family: 'Oswald', sans-serif;
+             font-size: 35px}
+
+             .abogado__civilYComercial{grid-area: civilYComercial;
+                background-image: url(img/apreton.jpg);
+                background-size: cover;
+                background-position: bottom;                
+                display: flex;
+                flex-direction: row;
+             background-size: cover;
+              }
+
+              .abogado__layer--comercial{background-color: orange;
+              position: relative;
+              opacity: 0.85;
+              font-family: 'Raleway', sans-serif; 
+             font-weight: bold;
+   width: 100%;
+   margin-bottom: 200px;
+   margin-top: 200px;
+   height: auto;}
+
+   .abogado__tramites{font-size: 35px;
+   	text-align: center;
+   	background-color: $naranja;
+    grid-area: naranja;}

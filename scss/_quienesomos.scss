@@ -1,0 +1,45 @@
+.quienesomos{background-image:  linear-gradient(90deg, rgba(253,107,29,1) 0%, rgba(255,199,121,1) 100%);
+             grid-area: naranja;}
+
+.quienesomos__flex{background-color: white;
+  display: flex;
+flex-direction: row;}
+
+.quienesomos__texto{ padding-left: 20px;
+             padding-right: 20px;
+             font-size: 15px;
+             background-color: white;
+             background-repeat: no-repeat;
+             background-size: cover;
+             height: 180px;
+             overflow: hidden;
+             width: auto;
+             background-position: center;
+             color: black;
+             margin-top: 0px;
+             margin-right:0px;
+             margin-bottom: 10px;
+             display: flex;
+            flex-direction: column;
+             right: 150px;
+             transition: 1s height;
+
+            }
+
+            .quienesomos__texto:hover {height: 400px;}
+
+.quienesomos__titulo{font-size: 50px;
+              text-align: center;
+              padding-right: 50px;
+              padding-top: 120px;
+              font-family:  'Anton', sans-serif; }
+
+.quienesomos__imagen{
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;}
+
+          
+           
+
+

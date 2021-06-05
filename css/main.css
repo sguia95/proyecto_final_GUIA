@@ -1,0 +1,385 @@
+.header {
+  background-image: url(img/fondonaranja.png);
+  background-position: center-right;
+  background-position: 50px bottom, 20px left;
+  text-align: center; }
+
+.header__logo {
+  width: 200px;
+  height: 200px;
+  position: relative; }
+
+.header_btn {
+  width: 100%; }
+
+.quienesomos {
+  background-image: linear-gradient(90deg, #fd6b1d 0%, #ffc779 100%);
+  grid-area: naranja; }
+
+.quienesomos__flex {
+  background-color: white;
+  display: flex;
+  flex-direction: row; }
+
+.quienesomos__texto {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 180px;
+  overflow: hidden;
+  width: auto;
+  background-position: center;
+  color: black;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  right: 150px;
+  transition: 1s height; }
+
+.quienesomos__texto:hover {
+  height: 400px; }
+
+.quienesomos__titulo {
+  font-size: 50px;
+  text-align: center;
+  padding-right: 50px;
+  padding-top: 120px;
+  font-family: 'Anton', sans-serif; }
+
+.quienesomos__imagen {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden; }
+
+.servicios {
+  background-image: url(https://image.freepik.com/foto-gratis/texturas-pared-gris-fondo_74190-4389.jpg);
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.servicios__titulo {
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px; }
+
+.servicios__carousel {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.servicios__subtitulos {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px; }
+
+.footer__titulo {
+  font-size: 60px; }
+
+.footer__parrafo {
+  font-size: 25px; }
+
+.arquitecto__titulo {
+  background-color: white;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 50px;
+  text-align: center; }
+
+.arquitecto__grid {
+  border: double;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 0px;
+  display: grid;
+  grid-template-areas: "habilitaciones edificio" "fachada edificio";
+  grid-template-rows: 500px, 500px;
+  grid-template-columns: 250px, 250px; }
+
+.arquitecto__habilitaciones {
+  background-image: url(img/shopin.jpg);
+  height: 100%;
+  grid-area: habilitaciones; }
+
+.arquitecto__layer {
+  background-color: orange;
+  ition: relative;
+  opacity: 0.85;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 200px;
+  margin-top: 200px;
+  padding-bottom: 20px;
+  height: auto; }
+
+.arquitecto__layer--obras {
+  background-color: orange;
+  position: relative;
+  top: 400px;
+  opacity: 0.85;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  height: auto; }
+
+.arquitecto__layer--subservicio {
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px; }
+
+.arquitecto__fachada {
+  background-image: url(img/fachada.jpg);
+  grid-area: fachada;
+  background-size: cover; }
+
+.arquitecto__edificio {
+  background-image: url(img/edificio.jpg);
+  background-size: cover;
+  grid-area: edificio; }
+
+.abogado__titulo {
+  background-color: white;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 50px;
+  text-align: center; }
+
+.abogado__grid {
+  border: double;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 0px;
+  display: grid;
+  grid-template-areas: "laboral discapacidad" "civilYComercial civilYComercial" "naranja naranja";
+  grid-template-rows: 500px, 500px, 200px;
+  grid-template-columns: 250px, 250px; }
+
+.abogado__laboral {
+  grid-area: laboral;
+  background-image: url(img/trabajador.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 0px;
+  margin-top: 0px; }
+
+.abogado__layer {
+  background-color: orange;
+  position: relative;
+  opacity: 0.85;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin-bottom: 200px;
+  margin-top: 200px;
+  padding-bottom: 20px;
+  height: auto; }
+
+.abogado__discapacidad {
+  grid-area: discapacidad;
+  background-image: url(img/discapacidad.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  background-size: cover; }
+
+.abogado__layer--subservicio {
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px; }
+
+.abogado__civilYComercial {
+  grid-area: civilYComercial;
+  background-image: url(img/apreton.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: row;
+  background-size: cover; }
+
+.abogado__layer--comercial {
+  background-color: orange;
+  position: relative;
+  opacity: 0.85;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 200px;
+  margin-top: 200px;
+  height: auto; }
+
+.abogado__tramites {
+  font-size: 35px;
+  text-align: center;
+  background-color: #EEAC42;
+  grid-area: naranja; }
+
+.mandatario__titulo {
+  background-color: white;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 50px;
+  text-align: center; }
+
+.mandatario__grid {
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 0px;
+  display: grid;
+  grid-template-areas: "moderno papelerio clasico";
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 1000px; }
+
+.mandatario__img {
+  background-image: url(img/moderno.jfif);
+  background-size: cover;
+  height: 1000px; }
+
+.mandatario__img--moderno {
+  background-position: center-left;
+  grid-area: moderno; }
+
+.mandatario__img--papelerio {
+  background-image: url(img/papelerio.jpg);
+  background-position: center;
+  grid-area: papelerio; }
+
+.mandatario__img--clasico {
+  background-image: url(img/clasico.jpg);
+  background-position: 20px top, 30px left;
+  grid-area: clasico; }
+
+.mandatario__layer {
+  background-color: orange;
+  position: relative;
+  bottom: 600px;
+  opacity: 0.85;
+  height: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 25px; }
+
+.contacto__grid {
+  background-color: #fff2dd;
+  display: grid;
+  grid-template-areas: "texto texto" "formulario telefono" "formulario ubicacion";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto, 100px 600px;
+  align-content: stretch; }
+
+.contacto__texto {
+  grid-area: texto;
+  background-color: #fff2dd;
+  text-align: center;
+  font-size: 250%;
+  font-family: 'Anton', sans-serif; }
+
+.contacto__formulario {
+  grid-area: formulario;
+  font-family: 'Anton', sans-serif;
+  font-size: 200%; }
+
+.contacto__fieldset {
+  background-image: linear-gradient(90deg, #fd6b1d 0%, #ffc779 100%);
+  width: 600px;
+  height: 700px;
+  text-align: left;
+  font-size: 50%; }
+
+.contacto__telefono {
+  grid-area: telefono;
+  background-color: white;
+  font-size: 140%;
+  font-family: 'Anton', sans-serif; }
+
+.contacto__ubicacion {
+  grid-area: ubicacion;
+  background-color: white;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+-------------
+body {
+  text-align: center;
+  background-image: url(https://images.pexels.com/photos/2680270/pexels-photo-2680270.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; }
+
+a {
+  color: orange; }
+
+header {
+  text-align: center;
+  background-color: #fff2dd; }
+  header h1 {
+    font-size: 50px; }
+  header h2 {
+    font-size: 30px;
+    margin-top: 0px;
+    padding-top: 0px; }
+  header p {
+    font-size: 25px; }
+  header ul {
+    text-align: center;
+    list-style: none; }
+    header ul li {
+      background-image: url(https://i2.wp.com/files.123freevectors.com/wp-content/original/112161-orange-and-yellow-blurred-background-vector.jpg?w=800&q=95);
+      display: inline-block;
+      border: solid;
+      width: 25%;
+      position: relative;
+      font-size: 14px; }
+    header ul ul {
+      position: absolute;
+      display: none; }
+      header ul ul li {
+        border: solid;
+        text-align: center;
+        display: block;
+        width: 320px; }
+    header ul li:hover ul {
+      display: block;
+      padding-left: 0px; }
+
+ul {
+  list-style: none; }
+
+h2 {
+  display: inline;
+  text-align: center;
+  font-family: Times New Roman;
+  font-size: 20px; }
+
+footer {
+  text-align: center;
+  background-image: linear-gradient(90deg, #fd6b1d 0%, #ffc779 100%);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px; }
+
+.fondo {
+  background-image: url(https://images.pexels.com/photos/2680270/pexels-photo-2680270.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); }
