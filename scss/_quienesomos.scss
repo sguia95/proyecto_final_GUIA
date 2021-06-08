@@ -1,7 +1,7 @@
 .quienesomos{background-image:  linear-gradient(90deg, rgba(253,107,29,1) 0%, rgba(255,199,121,1) 100%);
              grid-area: naranja;}
 
-.quienesomos__flex{background-color: white;
+.quienesomos__flex{background-color: $rosaheader;
   display: flex;
 flex-direction: row;}
 
@@ -40,6 +40,15 @@ flex-direction: row;}
       overflow: hidden;}
 
           
-           
+.quienesomos__earquitectura{ text-align: right;
+background-color: #6fb0d9;
+margin-right: 50px;
+}
+
+.quienesomos__eabogacia{ text-align: left;
+background-color: $naranja ;
+margin-left: 50px; }
+
+.quienesomos__etitulo{font-family:  'Anton', sans-serif;}
 
 
