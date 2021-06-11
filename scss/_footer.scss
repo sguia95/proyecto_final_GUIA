@@ -1,2 +1,12 @@
-.footer__titulo{font-size: 60px}
-.footer__parrafo{font-size: 25px}
+.footer__titulo{font-size: 30px;
+text-align: left;}
+.footer__parrafo{font-size: 25px;
+text-align: left;}
+
+@media (max-width: 768px) {
+.footer__titulo {
+font-size: 20px;
+}
+.footer__parrafo{font-size: 15px;}
+}
+

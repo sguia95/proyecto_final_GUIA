@@ -1,31 +1,60 @@
 .header {
   background-image: url(img/fondonaranja.png);
-  background-position: center-right;
-  background-position: 50px bottom, 20px left;
-  text-align: center; }
+  text-align: center;
+  background-size: cover;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 700px; }
+
+.header__container {
+  position: relative;
+  top: 75px; }
+
+.header__titulo {
+  font-family: 'Mate SC', serif; }
+
+.header__subtitulo {
+  font-family: 'Raleway', sans-serif; }
 
 .header__logo {
-  width: 200px;
-  height: 200px;
-  position: relative; }
+  width: 350px;
+  height: 350px; }
 
 .header_btn {
   width: 100%; }
 
+@media (max-width: 768px) {
+  .header__logo {
+    width: 175px;
+    height: 175px; }
+  .header__titulo {
+    font-size: 30px; }
+  .header__subtitulo {
+    font-size: 20px; }
+  .header {
+    background-image: url(img/fondonaranja.png);
+    text-align: center;
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 350px; } }
+
 .quienesomos {
-  background-image: linear-gradient(90deg, #fd6b1d 0%, #ffc779 100%);
-  grid-area: naranja; }
+  background-color: #fff2dd;
+  width: 100%; }
 
 .quienesomos__flex {
   background-color: #fff2dd;
   display: flex;
+  overflow: hidden;
   flex-direction: row; }
 
 .quienesomos__texto {
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 15px;
-  background-color: white;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff2dd;
   background-repeat: no-repeat;
   background-size: cover;
   height: 180px;
@@ -38,11 +67,10 @@
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  right: 150px;
-  transition: 1s height; }
+  right: 150px; }
 
 .quienesomos__texto:hover {
-  height: 400px; }
+  height: 100%; }
 
 .quienesomos__titulo {
   font-size: 50px;
@@ -56,6 +84,13 @@
   flex-direction: row;
   overflow: hidden; }
 
+.quienesomos__eencabezado {
+  text-align: center;
+  margin-left: 450px;
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: 'Anton', sans-serif; }
+
 .quienesomos__earquitectura {
   text-align: right;
   background-color: #6fb0d9;
@@ -67,13 +102,67 @@
   margin-left: 50px; }
 
 .quienesomos__etitulo {
-  font-family: 'Anton', sans-serif; }
+  font-family: 'Anton', sans-serif;
+  margin-top: 30px; }
+
+.quienesomos__parrafo {
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 20px;
+  font-size: 20px; }
+
+.quienesomos__himagen {
+  height: 350px; }
+
+@media (max-width: 768px) {
+  .quienesomos__flex {
+    background-color: #fff2dd;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column-reverse; }
+  .quienesomos__titulo {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Anton', sans-serif; }
+  .quienesomos__texto {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    font-size: 9px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff2dd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+    overflow: hidden;
+    width: auto;
+    background-position: center;
+    color: black;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    right: 150px;
+    transition: 1s height; }
+  .btn {
+    margin-top: 0px; }
+  .quienesomos__imagen {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden; }
+  .quienesomos__himagen {
+    width: 100%; }
+  .quienesomos__parrafo {
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
+    font-size: 15px; } }
 
 .servicios {
   background-image: url(https://image.freepik.com/foto-gratis/texturas-pared-gris-fondo_74190-4389.jpg);
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 600px;
   width: 100%;
   text-align: center;
   background-repeat: no-repeat;
@@ -84,7 +173,8 @@
 
 .servicios__titulo {
   font-family: 'Oswald', sans-serif;
-  font-size: 50px; }
+  font-size: 50px;
+  margin-bottom: 30px; }
 
 .servicios__carousel {
   position: relative;
@@ -93,22 +183,45 @@
 
 .servicios__subtitulos {
   font-family: 'Oswald', sans-serif;
-  font-size: 30px; }
+  font-size: 40px;
+  padding-bottom: 50px; }
+
+.servicios__listas {
+  font-size: 25px;
+  font-family: 'Mate SC', serif; }
+
+@media (max-width: 768px) {
+  .servicios__listas {
+    font-size: 19px; }
+  .servicios__subtitulos {
+    font-size: 20px; } }
+
+.servicios__titulo {
+  font-size: 25px; }
 
 .footer__titulo {
-  font-size: 60px; }
+  font-size: 30px;
+  text-align: left; }
 
 .footer__parrafo {
-  font-size: 25px; }
+  font-size: 25px;
+  text-align: left; }
+
+@media (max-width: 768px) {
+  .footer__titulo {
+    font-size: 20px; }
+  .footer__parrafo {
+    font-size: 15px; } }
 
 .arquitecto__titulo {
   background-color: white;
   margin-right: 100px;
   margin-left: 100px;
-  margin-top: 0px;
+  margin-top: 50px;
   margin-bottom: 0px;
   font-size: 50px;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Oswald', sans-serif; }
 
 .arquitecto__grid {
   border: double;
@@ -116,15 +229,15 @@
   margin-top: 0px;
   margin-left: 100px;
   margin-right: 100px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   display: grid;
   grid-template-areas: "habilitaciones edificio" "fachada edificio";
-  grid-template-rows: 500px, 500px;
-  grid-template-columns: 250px, 250px; }
+  grid-template-rows: 100px, 100px;
+  grid-template-columns: 100px, 100px; }
 
 .arquitecto__habilitaciones {
   background-image: url(img/shopin.jpg);
-  height: 100%;
+  height: 350px;
   grid-area: habilitaciones; }
 
 .arquitecto__layer {
@@ -134,34 +247,94 @@
   position: relative;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-  font-size: 25px;
-  margin-bottom: 200px;
-  margin-top: 200px;
+  font-size: 15px;
+  margin-top: 100px;
   padding-bottom: 20px;
-  height: auto; }
+  height: auto;
+  border: solid; }
 
 .arquitecto__layer--obras {
   background-color: orange;
   position: relative;
-  top: 400px;
+  top: 240px;
   opacity: 0.85;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-  height: auto; }
+  height: auto;
+  border: solid; }
 
 .arquitecto__layer--subservicio {
   font-family: 'Oswald', sans-serif;
-  font-size: 35px; }
+  font-size: 25px; }
 
 .arquitecto__fachada {
   background-image: url(img/fachada.jpg);
   grid-area: fachada;
-  background-size: cover; }
+  background-size: cover;
+  height: 350px; }
 
 .arquitecto__edificio {
   background-image: url(img/edificio.jpg);
   background-size: cover;
-  grid-area: edificio; }
+  grid-area: edificio;
+  height: 700px; }
+
+@media (max-width: 768px) {
+  .arquitecto__titulo {
+    background-color: white;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    text-align: center; }
+  .arquitecto__grid {
+    border: double;
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column; }
+  .arquitecto__habilitaciones {
+    background-image: url(img/shopin.jpg);
+    height: 350px;
+    grid-area: habilitaciones; }
+  .arquitecto__layer {
+    background-color: orange;
+    ition: relative;
+    opacity: 0.85;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    height: auto;
+    border: solid; }
+  .arquitecto__layer--obras {
+    background-color: orange;
+    position: relative;
+    top: 240px;
+    opacity: 0.85;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    height: auto;
+    border: solid; }
+  .arquitecto__layer--subservicio {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px; }
+  .arquitecto__fachada {
+    background-image: url(img/fachada.jpg);
+    grid-area: fachada;
+    background-size: cover;
+    height: 350px; }
+  .arquitecto__edificio {
+    background-image: url(img/edificio.jpg);
+    background-size: cover;
+    grid-area: edificio;
+    height: 700px; } }
 
 .abogado__titulo {
   background-color: white;
@@ -169,8 +342,9 @@
   margin-left: 100px;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 50px;
-  text-align: center; }
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif; }
 
 .abogado__grid {
   border: double;
@@ -178,7 +352,7 @@
   margin-top: 0px;
   margin-left: 100px;
   margin-right: 100px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   display: grid;
   grid-template-areas: "laboral discapacidad" "civilYComercial civilYComercial" "naranja naranja";
   grid-template-rows: 500px, 500px, 200px;
@@ -189,6 +363,7 @@
   background-image: url(img/trabajador.jpg);
   background-size: cover;
   background-position: center;
+  height: 350px;
   padding-top: 0px;
   margin-top: 0px; }
 
@@ -198,10 +373,10 @@
   opacity: 0.85;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-  margin-bottom: 200px;
-  margin-top: 200px;
+  margin-top: 120px;
   padding-bottom: 20px;
-  height: auto; }
+  height: 100px;
+  border: solid; }
 
 .abogado__discapacidad {
   grid-area: discapacidad;
@@ -209,20 +384,22 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  background-size: cover; }
+  background-size: cover;
+  height: 350px; }
 
 .abogado__layer--subservicio {
   font-family: 'Oswald', sans-serif;
-  font-size: 35px; }
+  font-size: 20px; }
 
 .abogado__civilYComercial {
   grid-area: civilYComercial;
   background-image: url(img/apreton.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   display: flex;
   flex-direction: row;
-  background-size: cover; }
+  background-size: cover;
+  height: 350px; }
 
 .abogado__layer--comercial {
   background-color: orange;
@@ -231,15 +408,90 @@
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   width: 100%;
-  margin-bottom: 200px;
-  margin-top: 200px;
-  height: auto; }
+  margin-top: 120px;
+  height: 160px;
+  border: solid; }
 
 .abogado__tramites {
   font-size: 35px;
   text-align: center;
   background-color: #EEAC42;
-  grid-area: naranja; }
+  grid-area: naranja;
+  font-family: 'Poppins', sans-serif; }
+
+@media (max-width: 768px) {
+  .abogado__titulo {
+    background-color: white;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    text-align: center; }
+  .abogado__grid {
+    border: double;
+    list-style-type: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column; }
+  .abogado__laboral {
+    grid-area: laboral;
+    background-image: url(img/trabajador.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    padding-top: 0px;
+    margin-top: 0px; }
+  .abogado__layer {
+    background-color: orange;
+    position: relative;
+    opacity: 0.85;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-top: 120px;
+    padding-bottom: 20px;
+    height: 100px;
+    border: solid; }
+  .abogado__discapacidad {
+    grid-area: discapacidad;
+    background-image: url(img/discapacidad.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    background-size: cover;
+    height: 350px; }
+  .abogado__layer--subservicio {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px; }
+  .abogado__civilYComercial {
+    grid-area: civilYComercial;
+    background-image: url(img/apreton.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    height: 350px; }
+  .abogado__layer--comercial {
+    background-color: orange;
+    position: relative;
+    opacity: 0.85;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 120px;
+    height: 160px;
+    border: solid;
+    font-size: 9.5px;
+    padding-top: 0px; }
+  .abogado__tramites {
+    font-size: 20px;
+    text-align: center;
+    background-color: #EEAC42;
+    grid-area: naranja; } }
 
 .mandatario__titulo {
   background-color: white;
@@ -248,7 +500,8 @@
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 50px;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Oswald', sans-serif; }
 
 .mandatario__grid {
   margin-top: 0px;
@@ -258,12 +511,12 @@
   display: grid;
   grid-template-areas: "moderno papelerio clasico";
   grid-template-columns: 1fr 1fr 1fr;
-  height: 1000px; }
+  height: 600px; }
 
 .mandatario__img {
   background-image: url(img/moderno.jfif);
   background-size: cover;
-  height: 1000px; }
+  height: 600px; }
 
 .mandatario__img--moderno {
   background-position: center-left;
@@ -282,31 +535,84 @@
 .mandatario__layer {
   background-color: orange;
   position: relative;
-  bottom: 600px;
+  bottom: 400px;
   opacity: 0.85;
   height: auto;
+  text-align: center;
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 0px;
   margin-top: 0px;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-  font-size: 25px; }
+  font-size: 25px;
+  border: solid; }
+
+@media (max-width: 768px) {
+  .mandatario__titulo {
+    background-color: white;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    text-align: center; }
+  .mandatario__grid {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-areas: "moderno papelerio clasico";
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 400px; }
+  .mandatario__img {
+    background-image: url(img/moderno.jfif);
+    background-size: cover;
+    height: 400px; }
+  .mandatario__img--moderno {
+    background-position: center-left;
+    grid-area: moderno; }
+  .mandatario__img--papelerio {
+    background-image: url(img/papelerio.jpg);
+    background-position: center;
+    grid-area: papelerio; }
+  .mandatario__img--clasico {
+    background-image: url(img/clasico.jpg);
+    background-position: 20px top, 30px left;
+    grid-area: clasico; }
+  .mandatario__layer {
+    background-color: orange;
+    position: relative;
+    bottom: 250px;
+    opacity: 0.85;
+    height: auto;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border: solid; } }
 
 .contacto__grid {
   background-color: #fff2dd;
   display: grid;
-  grid-template-areas: "texto texto" "formulario telefono" "formulario ubicacion";
+  grid-template-areas: "formulario telefono" "formulario ubicacion";
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto, 100px 600px;
+  grid-template-rows: 100px 600px;
   align-content: stretch; }
 
-.contacto__texto {
-  grid-area: texto;
+.contacto__header {
   background-color: #fff2dd;
-  text-align: center;
-  font-size: 250%;
-  font-family: 'Anton', sans-serif; }
+  font-family: 'Anton', sans-serif;
+  display: flex;
+  flex-direction: row; }
+
+.contacto__imagen {
+  width: 700px; }
 
 .contacto__formulario {
   grid-area: formulario;
@@ -332,6 +638,40 @@
   padding-top: 0px;
   padding-bottom: 0px; }
 
+@media (max-width: 768px) {
+  .contacto__grid {
+    background-color: #fff2dd;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch; }
+  .contacto__header {
+    background-color: #fff2dd;
+    font-family: 'Anton', sans-serif;
+    display: flex;
+    flex-direction: column; }
+  .contacto__imagen {
+    width: 100%; }
+  .contacto__formulario {
+    grid-area: formulario;
+    font-family: 'Anton', sans-serif;
+    font-size: 200%; }
+  .contacto__fieldset {
+    background-image: linear-gradient(90deg, #fd6b1d 0%, #ffc779 100%);
+    width: 600px;
+    height: 700px;
+    text-align: left;
+    font-size: 50%; }
+  .contacto__telefono {
+    grid-area: telefono;
+    background-color: white;
+    font-size: 140%;
+    font-family: 'Anton', sans-serif; }
+  .contacto__ubicacion {
+    grid-area: ubicacion;
+    background-color: white;
+    padding-top: 0px;
+    padding-bottom: 0px; } }
+
 -------------
 body {
   text-align: center;
@@ -343,7 +683,7 @@ body {
   font-size: 20px; }
 
 a {
-  color: orange; }
+  color: blue; }
 
 header {
   text-align: center;
@@ -353,32 +693,12 @@ header {
   header h2 {
     font-size: 30px;
     margin-top: 0px;
-    padding-top: 0px; }
+    padding-top: 0px;
+    margin-bottom: 20px; }
   header p {
     font-size: 25px;
     padding-left: 75px;
     padding-right: 0px; }
-  header ul {
-    text-align: center;
-    list-style: none; }
-    header ul li {
-      background-image: url(https://i2.wp.com/files.123freevectors.com/wp-content/original/112161-orange-and-yellow-blurred-background-vector.jpg?w=800&q=95);
-      display: inline-block;
-      border: solid;
-      width: 25%;
-      position: relative;
-      font-size: 14px; }
-    header ul ul {
-      position: absolute;
-      display: none; }
-      header ul ul li {
-        border: solid;
-        text-align: center;
-        display: block;
-        width: 320px; }
-    header ul li:hover ul {
-      display: block;
-      padding-left: 0px; }
 
 ul {
   list-style: none; }
@@ -390,9 +710,10 @@ h2 {
   font-size: 20px; }
 
 footer {
-  height: 300px;
+  height: auto;
   text-align: center;
   background-image: linear-gradient(90deg, #fd6b1d 0%, #ffc779 100%);
+  background-size: cover;
   margin-top: 0px;
   padding-top: 150px;
   margin-bottom: 0px;

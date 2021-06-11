@@ -4,7 +4,8 @@ margin-left: 100px;
 margin-top: 0px;
 margin-bottom: 0px;
 font-size: 50px;
-text-align: center;}
+text-align: center;
+font-family: 'Oswald', sans-serif;}
 
 .mandatario__grid{
              margin-top: 0px;
@@ -16,12 +17,12 @@ text-align: center;}
              "moderno papelerio clasico";
             
              grid-template-columns: 1fr 1fr 1fr;
-             height: 1000px
+             height: 600px;
              }
 
   .mandatario__img{background-image: url(img/moderno.jfif);
               background-size: cover;
-              height: 1000px;}
+              height: 600px;}
 
  .mandatario__img--moderno{background-position: center-left;
               grid-area: moderno;
@@ -37,13 +38,69 @@ text-align: center;}
 
 .mandatario__layer{background-color: orange;
               position: relative;
-              bottom: 600px;
+              bottom: 400px;
               opacity: 0.85;              
               height: auto;
+              text-align: center;
              margin-left:100px;
              margin-right:100px;
              margin-bottom: 0px;
              margin-top: 0px;
              font-family: 'Raleway', sans-serif; 
              font-weight: bold;
-    font-size: 25px; }
+    font-size: 25px;
+    border: solid; }
+
+@media (max-width: 768px) {
+.mandatario__titulo{background-color: white;
+margin-right: 0px;
+margin-left: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: 30px;
+text-align: center;}
+
+.mandatario__grid{
+             margin-top: 0px;
+             margin-left: 0px;
+             margin-right: 0px;
+             margin-bottom: 0px;
+             display: grid;
+            grid-template-areas: 
+             "moderno papelerio clasico";
+            
+             grid-template-columns: 1fr 1fr 1fr;
+             height: 400px;
+             }
+
+  .mandatario__img{background-image: url(img/moderno.jfif);
+              background-size: cover;
+              height: 400px;}
+
+ .mandatario__img--moderno{background-position: center-left;
+              grid-area: moderno;
+}
+
+ .mandatario__img--papelerio{background-image: url(img/papelerio.jpg);
+ background-position: center;
+              grid-area: papelerio;}
+
+ .mandatario__img--clasico{background-image: url(img/clasico.jpg);
+              background-position: 20px top, 30px left;
+              grid-area: clasico;}
+
+.mandatario__layer{background-color: orange;
+              position: relative;
+              bottom: 250px;
+              opacity: 0.85;              
+              height: auto;
+              text-align: center;
+             margin-left:0px;
+             margin-right:0px;
+             margin-bottom: 0px;
+             margin-top: 0px;
+             font-family: 'Raleway', sans-serif; 
+             font-weight: bold;
+    font-size: 18px;
+    border: solid; }
+}

@@ -15,6 +15,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,400&family=Zen+Dots&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Montserrat:wght@700&family=Raleway:ital@1&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Oswald:wght@500&display=swap" rel="stylesheet">
@@ -50,9 +52,10 @@
 </nav>
 
   
-<div class="container">   	
-     	<header class="header"><img class="header__logo" src="img/aamgestiones.png" alt="AAM Gestiones" ><h1 class="header__titulo">AAM Gestiones</h1>
-	<h2 class="header__subtitulo">Abogados, Arquitectos y Mandatarios a su servicio</h2> <br>
+<div class="container-fluid header">
+   	     	<header class="container-fluid header">
+            <div class="header__container"><img class="header__logo" src="img/aamgestiones.png" alt="AAM Gestiones"><h1 class="header__titulo">AAM Gestiones</h1>
+	<h2 class="header__subtitulo">Abogados, Arquitectos y Mandatarios a su servicio</h2> <br></div>
 
  
      
@@ -65,11 +68,12 @@
 			<div class="quienesomos__flex">
 		<div class="quienesomos__texto">
 		<h3 class="lead quienesomos__titulo" >¿Quienes somos?</h3>
-		<p >Somos una gestoría compuesta por profesionales (Abogados, Arquitectos y Mandatarios) que ofrecemos nuestros servicios para realizar tus trámites y defender tus derechos. Contamos con profesionales de destacadas y grandes trayectorias para ponernos a tu servicio. Trabajamos en la Ciudad de Buenos Aires (Trámites legales también para el Gran Buenos Aires). Atendemos en nuestra oficina en el barrio de Almagro</p></div>
+		<p >Somos una gestoría compuesta por profesionales (Abogados, Arquitectos y Mandatarios) que ofrecemos nuestros servicios para realizar tus trámites y defender tus derechos. Contamos con profesionales de destacadas y grandes trayectorias para ponernos a tu servicio. Trabajamos en la Ciudad de Buenos Aires (Trámites legales también para el Gran Buenos Aires). Atendemos en nuestra oficina en el barrio de Almagro</p> <br>
+    <button type="button" class="btn btn-warning"><a href="quienessomos.html">Ver más</a></button> </div>
 
        
        <div class="col-md-7 quienesomos__imagen" >
-        <img src="img/oficina.jpg" class="img-thumbnail" alt="oficina" width="700px"></div>
+        <img src="img/oficina.jpg" class="img-thumbnail" alt="oficina"></div>
        </div>
        </div>
        
@@ -78,7 +82,7 @@
        <div class="container-fluid col-md-10">
        <section class="servicios">
 
-       	<h3 class="servicios__titulo">Nuestros servicios</h3>
+       	<h3 class="servicios__titulo">NUESTROS SERVICIOS</h3>
          
          <div class="servicios__carousel">
        	<div id="demo" class="carousel slide" data-ride="carousel">
@@ -94,21 +98,22 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div><ul> <li class="servicios__subtitulos"><strong>Abogacia: Servicios juridicos</strong><br></li>
-	<img src="icon/equilibrar.png" alt="abogado" height="100px" ><br>
-          <li>Accidentes laborales/ART</li>
+	<img src="icon/equilibrar.png" alt="abogado" height="150px" ><br>
+          <div class="servicios__listas"> <li>Accidentes laborales/ART</li>
 				     <li >Despidos</li>
 				     <li>Sucesiones</li>
-				     <li> <a href="servicios.html#abogados">ver más</a></li>
+				     <li> <button type="button" class="btn btn-warning"><a href="servicios.html#abogados">ver más</a></button></li> </div>
 				      </ul>
 				      </div>
     </div>
     <div class="carousel-item">
       <div><ul> <li class="servicios__subtitulos"> <strong>Arquitectura: <br> Servicios tecnicos y administrativos</strong></li> 
 				     <img src="icon/edificios.png" alt="abogado" height="100px"><br>
+  <div class="servicios__listas">
 		        	<li>Habilitaciones</li>
 		        		 <li>Ley 257</li>
                          <li>Aviso de Obra</li>
-                         <li> <a href="servicios.html#arquitectos">ver más</a></li>   </ul>
+                         <li><button type="button" class="btn btn-warning"> <a href="servicios.html#arquitectos">ver más</a></button></li> </div>  </ul>
                          </div>
     </div>
     <div class="carousel-item">
@@ -116,11 +121,11 @@
 
 		        <div >
 		        	<ul> <li class="servicios__subtitulos"> <strong>Mandatario:Tramites del automotor</strong></li>
-		        <img src="icon/coche.png" alt="abogado" height="100px" ><br>
+		        <img src="icon/coche.png" alt="abogado" height="100px" ><br> <div class="servicios__listas">
 		          <li>Inscripción inicial</li>
 		        		<li>Transferencia</li>
 		        		<li>Informes y solicitud de duplicados</li>
-		        		<li> <a href="servicios.html#mandatarios">ver más</a></li>   </ul>
+		        		<li> <button type="button" class="btn btn-warning"><a href="servicios.html#mandatarios">ver más</a></button></li>  </div></ul>
 		        		</div>
     </div>
     </div>

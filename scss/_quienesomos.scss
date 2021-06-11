@@ -1,14 +1,18 @@
-.quienesomos{background-image:  linear-gradient(90deg, rgba(253,107,29,1) 0%, rgba(255,199,121,1) 100%);
-             grid-area: naranja;}
+.quienesomos{background-color: $rosaheader;
+             width: 100%;
+             
+            }
 
 .quienesomos__flex{background-color: $rosaheader;
   display: flex;
+  overflow: hidden;
 flex-direction: row;}
 
 .quienesomos__texto{ padding-left: 20px;
              padding-right: 20px;
-             font-size: 15px;
-             background-color: white;
+             font-size: 30px;
+             font-family: 'Montserrat', sans-serif;
+             background-color: $rosaheader;
              background-repeat: no-repeat;
              background-size: cover;
              height: 180px;
@@ -22,11 +26,13 @@ flex-direction: row;}
              display: flex;
             flex-direction: column;
              right: 150px;
-             transition: 1s height;
+            
 
             }
 
-            .quienesomos__texto:hover {height: 400px;}
+.quienesomos__texto:hover{height: 100%}
+
+
 
 .quienesomos__titulo{font-size: 50px;
               text-align: center;
@@ -39,7 +45,11 @@ flex-direction: row;}
       flex-direction: row;
       overflow: hidden;}
 
-          
+.quienesomos__eencabezado{text-align: center;
+margin-left: 450px;
+margin-top: 50px;
+font-size: 40px;
+font-family:'Anton', sans-serif; }          
 .quienesomos__earquitectura{ text-align: right;
 background-color: #6fb0d9;
 margin-right: 50px;
@@ -49,6 +59,59 @@ margin-right: 50px;
 background-color: $naranja ;
 margin-left: 50px; }
 
-.quienesomos__etitulo{font-family:  'Anton', sans-serif;}
+.quienesomos__etitulo{font-family:  'Anton', sans-serif;
+margin-top: 30px;}
 
+.quienesomos__parrafo{font-family:'Montserrat', sans-serif;
+margin-right: 20px;
+font-size: 20px; }
+
+.quienesomos__himagen{height: 350px;}
+
+@media (max-width: 768px) { .quienesomos__flex{background-color: $rosaheader;
+  display: flex;
+  overflow: hidden;
+flex-direction: column-reverse;}
+
+.quienesomos__titulo{font-size: 20px;
+              text-align: center;
+              padding-top: 10px;
+              font-family:  'Anton', sans-serif; }
+
+              .quienesomos__texto{ padding-left: 20px;
+             padding-right: 20px;
+             margin-bottom: 0px;
+             font-size: 9px;
+             font-family: 'Montserrat', sans-serif;
+             background-color: $rosaheader;
+             background-repeat: no-repeat;
+             background-size: cover;
+             height: 180px;
+             overflow: hidden;
+             width: auto;
+             background-position: center;
+             color: black;
+             margin-top: 0px;
+             margin-right:0px;
+             margin-bottom: 0px;
+             display: flex;
+            flex-direction: column;
+             right: 150px;
+             transition: 1s height;
+            }
+
+.btn{margin-top: 0px;}
+
+.quienesomos__imagen{
+      display: flex;
+      flex-direction: column-reverse;
+      overflow: hidden;}
+
+  .quienesomos__himagen{width: 100%;}
+
+.quienesomos__parrafo{font-family:'Montserrat', sans-serif;
+margin-right: 20px;
+font-size: 15px; }
+
+}
 
